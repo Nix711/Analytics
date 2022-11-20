@@ -15,10 +15,16 @@ export type User = {
   name: string;
 };
 
+export type InfoPadiglione = {
+  id: string;
+  name: string;
+}
+
 export type State = {
   users: User[];
   loadingIds: string[];
   padiglione?: Padiglione;
+  padiglioni: InfoPadiglione[];
 };
 
 export type GetState = () => State;

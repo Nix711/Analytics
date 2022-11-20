@@ -28,7 +28,7 @@ const makeStore: MakeStore<Store<State, any>> = (): any => {
   const persistConfig = {
     key: "nextjs",
     storage,
-    blacklist: ["loadingIds", "users"],
+    blacklist: ["loadingIds", "users", "padiglione"],
   };
 
   const persistedReducer = persistReducer(persistConfig, reducers);
