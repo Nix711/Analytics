@@ -1,14 +1,14 @@
 export type TinyBarChart = {
   name: string;
   views: number;
-}
+};
 
 export type Padiglione = {
   id: string;
   name: string;
   views: number;
   daysChart: TinyBarChart[];
-}
+};
 
 export type User = {
   id: string;
@@ -18,7 +18,7 @@ export type User = {
 export type State = {
   users: User[];
   loadingIds: string[];
-  padiglione: Padiglione | undefined;
+  padiglione?: Padiglione;
 };
 
 export type GetState = () => State;
